@@ -1,0 +1,347 @@
+:root {
+    /* Variables */
+    --color_text-primary: #232125;       /* Color de texto primario */
+    --color_text-secundary: #101E2C;     /* Color de texto secundario */
+    --color_text-tertiary: #fffefe;      /* Color de texto terciario */
+    --main_color-primary: #4442b4;       /* Color principal */
+    --main_color-secundary: #748dd3;     /* Color secundario */
+    --main_color-terceary: #47bec7;
+    --main_color_back: #6bbddd;
+    --main_color_shadow: #1e8eb1;
+    --main_color_border: #1c1a27;
+    --background-color: #142057;         /* Color de fondo */
+    --lowText_font_size: 16px;           /* Tamaño de fuente para texto pequeño */
+    --text_size_title: 40px;             /* Tamaño de fuente para títulos */
+    --text_title_card: 24px;             /* Tamaño de fuente para títulos de tarjeta */
+    --text_title_cardv2: 20px;           /* Tamaño de fuente para subtítulos de tarjeta */
+    --text_paragraph: 16px;              /* Tamaño de fuente para párrafos */
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2); /* Sombra principal */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    /* primera parte */
+
+    header{
+        width: 100%;
+        height: 100px;
+        position: fixed; /*Esta propiedad permite que el elemento header este fijo en nuestra página*/
+        z-index: 100; /*Esta propiedad permite que el elemento header se sueprponga a otros elementos en nuestra página*/
+    }
+    .container_header{
+        background: linear-gradient(to right, var(--color_text-tertiary), var(--color_text-tertiary), var(--main_color-secundary), var(--main_color-primary), var(--main_color-primary));;
+        border-style: solid;
+        border-color: var(--main_color_border);
+        width: 1200px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px; /*Centrar el elemento horizontalmente */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+    }
+    .logo{
+        
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    .logo img{
+        width: 75px;
+        height: 75px;
+        transition: all .1s ease-in-out;
+    }
+    .logo img:hover{
+        transform: scale(1.2);
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        
+         /* Fondo transparente por defecto */
+        transition: background-color 0.3s ease; /* Suaviza el cambio de color de fondo */
+        position: sticky; /* Hace que el menú se quede fijo en la parte superior */
+        top: 0; /* Posición en la parte superior de la pantalla */
+        width: 100%;
+        z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    }
+    .menu nav{
+        margin: 0px 20px;
+    }
+    .menu nav ul{
+        display: flex;
+    }
+    .menu nav ul li{
+        list-style: none;
+        margin: 20px 16px;
+    }
+    .menu nav ul li a{
+        color: var(--color_text-primary);
+        font-size: var(--lowText_font_size);
+        position: relative;
+    }
+
+    .menu nav ul li a:hover{
+
+        color: rgb(var(--color_text-primary), var(--color_text-secundary));
+        text-decoration: underline;
+
+    }
+    .btn_quote{
+        display: block;
+        padding: 8px 40px;
+        border: 2px solid var(--main_color_border);
+        border-radius: 8px;
+        font-weight: 500;
+        color: var(--color_text-tertiary);
+        margin: 0px 20px;
+        transition: all 300ms;
+    }
+    
+    .btn_quote:hover{
+        color: rgb(var(--main_color-secundary), var(--main_color-terceary));
+        background: var(--main_color-secundary);
+    }
+    .menu .socialMedia{
+        margin-left: auto;
+    }
+    
+    .menu .socialMedia a{
+        margin: 0px 0px;
+    }
+    .menu .socialMedia img{
+        width: 70px;
+    }
+
+    /* segunda parte */
+
+    .container_cover{
+
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+    }
+    
+    .cover{
+    
+        background-color: var(--background-color);
+        opacity: 0.9;
+        border-style: solid;
+        border-color: var(--main_color_border);
+        max-width: 1200px;
+        height: 325px;
+        margin-left: auto;
+        margin-top: 100px;
+        display: flex;
+        padding: 0px 20px;
+
+    }
+    
+    .text__cover {
+
+        width: 100%;
+        padding-right: 200px;
+    }
+    .text__cover h1{
+
+        font-size: 50px;
+        text-align: center;
+        margin-top: 40px;
+        color: var(--color_text-tertiary);
+
+    }
+    .text__cover p{
+        margin-top: 40px;
+        color: var(--color_text-tertiary);
+    }
+    
+    .image__cover_saur img{
+    
+        width: 300px;
+        height: 300px;
+        margin-top: 10px;
+    
+    }
+    .image__cover_saur2 img{
+
+        width: 350px;
+        height: 450px;
+        margin-top: 10px;
+
+    }
+    .image__cover_number1 img{
+    
+        width: 300px;
+        height: 300px;
+    
+    }
+    .image__cover_number2 img{
+    
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+    
+    }
+    .divicion img{
+        height: 25px;
+        width: 1500px;
+    }
+
+    /* tercera parte */
+
+    .container_cover_personal_info{
+
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .cover_personasl_info{
+    
+        background-color: var(--background-color);
+        opacity: 0.9;
+        border-style: solid;
+        border-color: var(--main_color_border);
+        width: 1200px;
+        height: 500px;
+        margin-right: auto;
+        margin-top: 100px;
+        display: flex;
+        padding: 0px 20px;
+
+    }
+
+    /* cuarta parte */
+
+    .container__card-primary{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        
+    }
+
+    .container_box-cardPrimary{
+        opacity: 0.9;
+        margin: auto;
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-between;
+    }
+    .card__primary{
+        border-style: solid;
+        border-color: var(--main_color_border);
+        width: 1400px;
+        height: 500px;
+        margin-top: 100px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 20px;
+    }
+    .card_trustbox_card-primary img{
+        
+        width: 600px;
+        height: 300px;
+        transition: all .1s ease-in-out;
+
+    }
+    .card_trustbox_card-primary img:hover{
+        transform: scale(1.2);
+    }
+
+    .card_trustbox_card-secundary img{
+
+        width: 600px;
+        height: 300px;
+        padding: auto;
+        transition: all .1s ease-in-out;
+
+    }
+    
+    .text__card-primary{
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+    }
+    .text__card-primary p{
+        letter-spacing: 4px;
+        font-size: var(--text_paragraph);
+        font-weight: 500;
+    }
+    
+    .text__card-primary h1{
+        font-size: var(--text_size_title);
+        font-weight: 600px;
+    }
+
+    /* Quinta parte */
+
+    .container__card-primary2{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        
+    }
+
+    .container_box-cardPrimary2{
+        margin: auto;
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-between;
+    }
+    .card__primary2{
+        border-style: solid;
+        border-color: var(--main_color_border);
+        width: 1400px;
+        height: 500px;
+        margin-top: 100px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 20px;
+    }
+    .card_trustbox_card-primary2 img{
+        
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .card_trustbox_card-secundary2 img{
+
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .card_trustbox_card-terceary img{
+
+        width: 300px;
+        height: 300px;
+    }
+
+    .text__card-primary2{
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+    }
+    .text__card-primary2 p{
+        letter-spacing: 4px;
+        font-size: var(--text_paragraph);
+        font-weight: 500;
+    }
+    
+    .text__card-primary2 h1{
+        font-size: var(--text_size_title);
+        font-weight: 600px;
+    }
+
+    .map{
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+}

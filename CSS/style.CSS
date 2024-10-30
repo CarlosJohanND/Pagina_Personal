@@ -137,7 +137,7 @@
         border-color: var(--main_color_border);
         max-width: 1200px;
         height: 325px;
-        margin-left: auto;
+        margin: auto;
         margin-top: 100px;
         display: flex;
         padding: 0px 20px;
@@ -191,7 +191,7 @@
     }
     .divicion img{
         height: 25px;
-        width: 1500px;
+        width: 2000px;
     }
 
     /* tercera parte */
@@ -209,7 +209,7 @@
         border-color: var(--main_color_border);
         width: 1200px;
         height: 500px;
-        margin-right: auto;
+        margin: auto;
         margin-top: 100px;
         display: flex;
         padding: 0px 20px;
@@ -248,8 +248,14 @@
         transition: all .1s ease-in-out;
 
     }
+
     .card_trustbox_card-primary img:hover{
-        transform: scale(1.2);
+        transform: scale(1.05);
+    }
+    .card_trustbox_card-primary p{
+        max-width: 600px;
+        color: var(--color_text-secundary);
+        font-weight: bold;
     }
 
     .card_trustbox_card-secundary img{
@@ -260,9 +266,17 @@
         transition: all .1s ease-in-out;
 
     }
+    .card_trustbox_card-secundary img:hover{
+        transform: scale(1.05);
+    }
+    .card_trustbox_card-secundary p{
+        max-width: 600px;
+        color: var(--color_text-secundary);
+        font-weight: bold;
+    }
     
     .text__card-primary{
-        max-width: 800px;
+        max-width: 300px;
         margin: auto;
         text-align: center;
     }
@@ -305,20 +319,49 @@
         
         width: 300px;
         height: 300px;
+        transition: all .1s ease-in-out;
 
+    }
+    .card_trustbox_card-primary2 img:hover{
+        transform: scale(1.05);
+
+    }
+    .card_trustbox_card-primary2 p{
+        max-width: 300px;
+        color: var(--color_text-secundary);
+        font-weight: bold;
     }
 
     .card_trustbox_card-secundary2 img{
 
         width: 300px;
         height: 300px;
+        transition: all .1s ease-in-out;
 
+    }
+    .card_trustbox_card-secundary2 img:hover{
+        transform: scale(1.05);
+
+    }
+    .card_trustbox_card-secundary2 p{
+        max-width: 300px;
+        color: var(--color_text-secundary);
+        font-weight: bold;
     }
 
     .card_trustbox_card-terceary img{
 
         width: 300px;
         height: 300px;
+        transition: all .1s ease-in-out;
+    }
+    .card_trustbox_card-terceary img:hover{
+        transform: scale(1.05);
+    }
+    .card_trustbox_card-terceary p{
+        max-width: 300px;
+        color: var(--color_text-secundary);
+        font-weight: bold;
     }
 
     .text__card-primary2{
@@ -339,9 +382,146 @@
 
     .map{
 
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 20px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        justify-content: center;
+        /* Centra horizontalmente */
+        align-items: center;
+        /* Centra verticalmente */
+        min-height: 500px;
+        /* Asegura que ocupe toda la altura de la pantalla */
+        align-items: center;
+        display: flex;
+        
     }
 
+    .Formulario_contact {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        justify-content: center;
+        /* Centra horizontalmente */
+        align-items: center;
+        /* Centra verticalmente */
+        min-height: 500px;
+        /* Asegura que ocupe toda la altura de la pantalla */
+        margin: auto;
+        align-items: center;
+        max-width: 1200px;
+    }
+    
+    
+    .Title_formulario {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 50px;
+    }
+    
+    .formflex{
+        display: flex;
+        height: 300px;
+    }
+    
+    .formflex img{
+        padding-right: 400px;
+        height: 300px;
+    }
+    
+    form {
+        align-items: center;
+        background: var(--main_color_back);
+        padding: 20px;
+        border-radius: 5px;
+        border-color: var(--main_color_border);
+        box-shadow: 0 0 10px var(--color_text-primary);
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    input[type="submit"] {
+        background-color: var(--main_color-secundary);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: all .1s ease-in-out;
+    }
+
+    input[type="submit"]:hover {
+        background-color: var(--main_color-primary);
+        transform: scale(1.05);
+    }
+    
+
+    /* Sexta */
+    .footer{
+        padding-top: 60px;
+        padding-bottom: 90px;
+        background: linear-gradient(to right,var(--color_text-tertiary),var(--color_text-tertiary) , var(--main_color-secundary));
+        max-height: 500px;
+    }
+    
+    .footer_conatiner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px 30px 20px;
+    }
+    
+    .logo_information{
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
+    
+    .logo_information img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .link_information{
+        margin-right: auto;
+    }
+    
+    .link_information ul{
+        list-style-type: none;
+    }
+    
+    .link_information p{
+        font-size: 25px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        color:var(--main_color_back);
+        
+    }
+    
+    .link_information li{
+        margin-top: 20px;
+    }
+    
+    .link_information a{
+        color: var(--color_text-secundary);
+        font-size: 18px;
+    }
+    
+    .link_information a:hover{
+        color: var(--color_text-primary);
+    }
 }
